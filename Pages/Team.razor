@@ -1,0 +1,54 @@
+﻿@page "/Team"
+@using NextDev_Blazor2.Models
+@inject HttpClient Http
+
+<div class="team-page pt-5">
+    <section class="team-section">
+        <div class="container">
+        <h2 class="mb-3">NOTRE EQUIPE</h2>
+            <h5 class="mb-3 lead">Notre équipe de développement ne s'appelle pas simplement 'Équipe Dan Kassaoua'.
+                Nous nous inspirons d'une figure historique nigérienne, Dan Kassawa, le fondateur et leader du
+                royaume de Maradi au 19ème siècle. Comme lui, nous sommes un groupe soudé qui apprend, construit et
+                résout des problèmes complexes avec une volonté de fer. Nous sommes les Héritiers de Dan Kassawa
+                dans le monde du code.</h5>
+            <h5 class="mb-5">Notre Ambition : Faire de chaque project une opportunité d'apprendre, de nous
+                dépasser et de repousser
+                les frontieres du .Net </h5>
+
+            <div class="row justify-content-center g-5">
+                @if (Member == null)
+                {
+                    <p>Chargement...</p>
+                }
+                else
+                {
+                    @foreach (var data in Member)
+                    {
+                        <div class="col-md-6 d-flex justify-content-center">
+                            <div class="team-member">
+                                <img src="@data.MemberImage" alt="@data.MemberFullName">
+                                <div class="team-info">
+                                    <NavLink href="@($"/Team/Detail/{data.MemberID}")">
+                                    <h5 class="fw-bold"> @data.MemberFullName</h5>
+                                    </NavLink>
+                                    <small class="fw-semibold">@data.MemberTitle</small>
+                                    <p class="fw-medium">@data.MemberTitleDesc</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </section>
+</div>
+
+
+@code {
+    private List<TeamMember>? Member;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Member = await Http.GetFromJsonAsync<List<TeamMember>>("Data/TeamMembersData.json");
+    }
+}

@@ -1,0 +1,96 @@
+[
+  {
+    "MemberID": 1,
+    "MemberFullName": "KOFFI LÉVIS AKALETE",
+    "MemberTitle": "SARKI",
+    "MemberTitleDesc": "Le Stratege Visionnaire",
+    "MemberDescription": "Celui qui trace les chemins de demain",
+    "MemberPhone": "+227 91 53 52 20",
+    "MemberEmail": "l.akalete20@gmail.com",
+    "MemberAddress": "Niamey 2000 - Niamey, Niger",
+    "MemberImage": "/images/next_dk_sarki.png",
+    "MemberSlogan": "Trace la voie, Inspire l'avenir",
+    "MemberRole": "Je suis le leader. J'ai la vision globale du projet, je prends les décisions finales sur l'architecture et la direction à prendre. Je coordonne les éfforts de tous et assure la cohésion de l'équipe."
+  },
+  {
+    "MemberID": 2,
+    "MemberFullName": "SANI RAZAK",
+    "MemberTitle": "WAZIRI",
+    "MemberTitleDesc": "Le Sage des Données",
+    "MemberDescription": "Gardien du savoir, Architecte de la connaissance",
+    "MemberPhone": "+227 96 42 67 35",
+    "MemberEmail": "sanirazak48@gmail.com",
+    "MemberAddress": "Niamey 2000 - Niamey, Niger",
+    "MemberImage": "/images/next_dk_waziri.png",
+    "MemberSlogan": "Donne forme a l'information, Crée la connaissance",
+    "MemberRole": "Je suis le cerveau de la logique applicative. Je conçois et gère le schéma de la base de données (SQL Server, par exemple), écrit les requêtes complexes et s'assure que la logique métier (les règles de notre application) est solide et bien implémentée."
+  },
+  {
+    "MemberID": 3,
+    "MemberFullName": "ABDOUL RAOUF HAROUNA",
+    "MemberTitle": "GALADIMA",
+    "MemberTitleDesc": "L'Artisan des Interfaces",
+    "MemberDescription": "Sculpeur d'emotions digitales",
+    "MemberPhone": "+227 93 18 69 94",
+    "MemberEmail": "abdoulraoufharouna62@gmail.com",
+    "MemberAddress": "Niamey 2000 - Niamey, Niger",
+    "MemberImage": "/images/next_dk_galadima_1.0.png",
+    "MemberSlogan": "Sculpte l'experience, Emotionne l'utilisateur",
+    "MemberRole": "Je suis responsable de l'aspect et de la convivialité de l'application. C'est moi qui gère le palais pour que les visiteurs (les utilisateurs) aient une expérience agréable. Je travaille sur le front-end (HTML, CSS, JavaScript, Blazor) en collaboration avec le Sarkin Fada(Le Maitre des Versions)."
+  },
+  {
+    "MemberID": 4,
+    "MemberFullName": "ASSANE OUSMANE ABDEL WAHAB",
+    "MemberTitle": "MADAWAKI",
+    "MemberTitleDesc": "Le Batisseur d'API",
+    "MemberDescription": "Architecte des fondations invisibles",
+    "MemberPhone": "+227 89 79 19 41",
+    "MemberEmail": "assaneousmaneabdelwahab@gmail.com",
+    "MemberAddress": "Yantala/Talladje - Niamey, Niger",
+    "MemberImage": "/images/next_dk_madawaki.png",
+    "MemberSlogan": "Batit l'invisible, fait vivre le systeme",
+    "MemberRole": "Je suis le guerrier du serveur. Je construit le moteur de l'application, les contrôleurs ASP.NET, la logique serveur et les API. C'est moi qui assure que les frontières de notre application (les endpoints) sont sécurisées et efficaces. Je suis en première ligne pour les fonctionnalités complexes."
+  },
+  {
+    "MemberID": 5,
+    "MemberFullName": "SALIMA MOUNKAILA",
+    "MemberTitle": "SARKIN YANDOKA",
+    "MemberTitleDesc": "La Gardienne de l'Excellence",
+    "MemberDescription": "Garante de la qualite imperissable",
+    "MemberPhone": "+227 94 19 91 48",
+    "MemberEmail": "salimatamounkaila7@gmail.com",
+    "MemberAddress": "Poudrière - Niamey, Niger",
+    "MemberImage": "/images/next_dk_sarkin_yandoka.png",
+    "MemberSlogan": "Garantit l'excellence, Dénoue les complexites",
+    "MemberRole": "Je suis la gardienne de la qualité et de la sécurité. Je veille à ce que le code soit propre, respecte les bonnes pratiques, et n'ait pas de vulnérabilités. Je peut me charger des tests unitaires et de la revue de code pour traquer les bogues comme des espions."
+  },
+  {
+    "MemberID": 6,
+    "MemberFullName": "MOHAMED AMADOU BOUBACAR",
+    "MemberTitle": "SARKIN FADA",
+    "MemberTitleDesc": "Le Maitre des Versions",
+    "MemberDescription": "Gestionnaire du temps et de l'evolution",
+    "MemberPhone": "+227 80 53 90 81",
+    "MemberEmail": "mohamedamadouboubacar@gmail.com",
+    "MemberAddress": "Zongo - Niamey, Niger",
+    "MemberImage": "/images/next_dk_sarkin_fada.png",
+    "MemberSlogan": "Harmonie le code, Rythme la collaboration",
+    "MemberRole": "Je suis le maître de l'organisation interne. C'est moi qui gère Git (les branches, les merges), s'assure que tout le monde travaille harmonieusement sur le même code et que les nouvelles fonctionnalités s'intègrent sans conflit. Je suis le garant du flux de travail.",
+
+    "__comment": [
+      {
+        "MemberID": 7,
+        "MemberFullName": "XX XX XX XX XX",
+        "MemberTitle": "DOGWARI",
+        "MemberTitleDesc": "Le Gardien du Numerique",
+        "MemberDescription": "Vigile du royaume digital",
+        "MemberPhone": "+227 XX XX XX XX",
+        "MemberEmail": "xxxxxxxx@gmail.com",
+        "MemberAddress": "XX XX XX XX XX",
+        "MemberImage": "/images/next_dk_xxxx.png",
+        "MemberSlogan": "Proteger le monde Digital, Une mission sans relache",
+        "MemberRole": "Je suis le guerrier garde qui protege les frontieres numeriques et assure l'acheminement continu des donnees."
+      }
+    ]
+  }
+]

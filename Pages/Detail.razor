@@ -1,0 +1,71 @@
+﻿@page "/Team/Detail/{ID:int}"
+@using NextDev_Blazor2.Models
+@inject HttpClient Http
+
+@if (data is null)
+{
+    <p>Chargement...</p>
+}
+else
+{
+    <section class="profile-section pt-5">
+
+        <div class="profile-image">
+            <img src="@data.MemberImage">
+        </div>
+
+
+        <div class="profile-info">
+            <h1>Salut, Je suis @data.MemberFullName</h1>
+            <h2 class="mb-0"><i class="fas fa-certificate"></i> @data.MemberTitle, @data.MemberTitleDesc</h2>
+            <h3>
+                <ul>
+                    <li>
+                        <i class="fas fa-lightbulb"></i>
+                        <strong>Desc : </strong>@data.MemberDescription
+                    </li>
+
+                    <li>
+                        <i class="fas fa-quote-left" aria-hidden="true"></i>
+                        <strong>Slogan : </strong>@data.MemberSlogan
+                    </li>
+
+                    <li class="role">
+                        <i class="fas fa-user-shield"></i>
+                        <strong>Rôle : </strong>@data.MemberRole
+                    </li>
+
+                    <li><i class="fas fa-phone"></i>
+                        <strong>Phone: </strong>
+                        <a href="tel:@data.MemberPhone">@data.MemberPhone</a>
+                    </li>
+
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <strong>Email: </strong>
+                        <a href="mailto:@data.MemberEmail">@data.MemberEmail</a>
+                    </li>
+
+                    <li><i class="fas fa-map-marker-alt"></i> @data.MemberAddress</li>
+                </ul>
+            </h3>
+            <NavLink class="btn-back text-center" href="/Team">RETOUR</NavLink>
+        </div>
+    </section>
+}
+
+@code {
+    [Parameter] public int ID { get; set; }
+
+    private TeamMember? data;
+    private List<TeamMember>? AllUsers;
+
+    protected override async Task OnParametersSetAsync()
+    {
+
+        if (AllUsers is null)
+            AllUsers = await Http.GetFromJsonAsync<List<TeamMember>>("Data/TeamMembersData.json");
+
+        data = AllUsers?.FirstOrDefault(u => u.MemberID == ID);
+    }
+}

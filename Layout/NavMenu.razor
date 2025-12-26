@@ -1,0 +1,42 @@
+﻿
+@* navbar-dark bg-dark *@
+<nav class="navbar navbar-expand-lg mb-3  navbar-light bg-light fixed-top">
+    <div class="container">
+        <!-- Logo -->
+        <NavLink class="navbar-brand ps-1" href="/">DAN KASSAWOUA</NavLink>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler" type="button" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="@NavMenuCssClass navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-5">
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/">
+                        <i class="bi bi-house-door me-2"></i>Accueil
+                    </NavLink>
+                </li>
+                <li class="nav-item">
+                    <NavLink class="nav-link" href="/Team">
+                        <i class="bi bi-people-fill me-2"></i>Equipe
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuCssClass =>
+    collapseNavMenu ? "collapse" : "show";
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
